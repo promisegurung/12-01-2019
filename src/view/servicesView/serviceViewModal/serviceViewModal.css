@@ -1,0 +1,96 @@
+.service-specific {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 45% 8% 47%;
+  grid-template-areas:
+    " img  right"
+    " . right"
+    " desc right";
+}
+
+#service-specific-img {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+.service-specific-desc {
+  margin-top: -3%;
+  padding-left: 15px;
+  grid-area: desc;
+  color: grey;
+}
+.service-specific-desc h6 {
+  font-size: 19px;
+}
+.service-specific-desc p {
+  font-size: 13px;
+}
+#service-specific-title {
+  margin: -1px auto 0 0;
+  font-weight: 600;
+  font-size: 16px;
+}
+#service-specific-host {
+    margin: auto 0;
+    font-size: 13px;
+}
+.right-desc-area {
+  grid-area: right;
+  background-color: lightgrey;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-template-rows: 5% 35% 10% 45% 5%;
+  grid-template-areas:
+    " . . closeBtn"
+    " . topHalf ."
+    ". Button ."
+    " . bottomHalf ."
+    " . . .";
+}
+#service-specific-contact-number {
+  grid-area: Button;
+  width: 100%;
+  text-align: center;
+  height: 70%;
+  margin: auto 0;
+  border-radius: 2px;
+  background-color: darkgreen;
+  color: bisque;
+  padding-top: 6px;
+}
+#contact-label {
+  margin: 20px auto 0 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+#contact-1 {
+  margin: -1px auto 0 0;
+  font-size: 12px;
+  color: blue;
+}
+#contact-2 {
+  margin: -1px auto 0 0;
+  font-size: 12px;
+  color: blue;
+}
+#availability-label {
+  margin: 20px auto 0 0;
+  font-size: 13px;
+  font-weight: 600;
+}
+#availability {
+  margin: -1px auto 0 0;
+  font-size: 12px;
+}
+
+#service-specific-location{
+    margin: -1px auto 0 0;
+    font-size: 12px;
+}

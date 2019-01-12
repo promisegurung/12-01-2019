@@ -1,0 +1,156 @@
+
+.event-specific {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 45% 8% 47%;
+    grid-template-areas:
+      " img  right"
+      " . right"
+      " desc right";
+  }
+  
+  #event-specific-img {
+    grid-area: img;
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid lightgrey;
+  }
+  .event-specific-desc {
+    margin-top: -3%;
+    padding-left: 15px;
+    grid-area: desc;
+    color: grey;
+  }
+  .event-specific-desc h6 {
+    font-size: 19px;
+  }
+  .event-specific-desc p {
+    font-size: 13px;
+  }
+  
+  .right-desc-area {
+    grid-area: right;
+    background-color: lightgrey;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 5% 35% 10% 45% 5%;
+    grid-template-areas:
+      " . . closeBtn"
+      " . topHalf ."
+      ". Button ."
+      " . bottomHalf ."
+      " . . .";
+  }
+  #closeBtn {
+    grid-area: closeBtn;
+    text-align: center;
+    font-size: 18px;
+    padding-right: 2px;
+    margin: auto;
+  }
+  #closeBtn:hover {
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .topHalf {
+    grid-area: topHalf;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 12% 15% 15% 10% 38% 10%;
+    grid-template-areas:
+      "month"
+      "date"
+      "title"
+      "organiser"
+      "."
+      "fullPrice";
+  }
+  #event-specific-month {
+    width: 100%;
+    height: 100%;
+    color: rgb(153, 10, 10);
+    margin: auto;
+    margin-bottom: -2px;
+    font-size: 15px;
+    text-transform: uppercase;
+    grid-area: month;
+  }
+  #event-specific-date {
+    margin-top: -2px;
+    padding-left: 3px;
+    font-size: 17px;
+    grid-area: date;
+  }
+  #event-specific-title {
+    font-size: 17px;
+    font-weight: 600;
+  }
+  #event-specific-organiser {
+    grid-area: organiser;
+    font-size: 12px;
+  }
+  #event-specific-fullPrice {
+    grid-area: fullPrice;
+    margin: auto 0;
+    font-size: 13px;
+  }
+  #event-specific-tickets-button {
+    grid-area: Button;
+    height: 70%;
+    margin: auto 0;
+    border-radius: 2px;
+    border-style: none;
+    background-color: darkgreen;
+    color: bisque;
+  }
+  #event-specific-tickets-button:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px grey;
+    font-size: 16px;
+  }
+  .bottomHalf {
+    width: 100%;
+    height: 100%;
+    grid-area: bottomHalf;
+  
+  }
+  #date-time-label {
+    margin: 50px auto 0 0;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  #date-time {
+    margin: -2px auto auto 0;
+    font-size: 12px;
+  }
+  #location-label {
+    margin: 20px auto 0 0;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  #event-specific-location {
+    margin: -2px auto 0 0;
+    font-size: 12px;
+  }
+  #view-map {
+    color: blue;
+    margin: -10px auto auto 0;
+    font-size: 11px;
+  }
+  #refund-policy-label {
+    margin: 20px auto 0 0;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  #refund-policy {
+    margin: -2px auto auto 0;
+    font-size: 12px;
+  }
+  

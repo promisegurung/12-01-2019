@@ -1,0 +1,16 @@
+.filter-categories {
+    color: whitesmoke;
+    display: inline-block;
+    background-color: rgb(173, 168, 168);
+    border-radius: 15px;
+    margin: auto 8px;
+    margin-bottom: 5px;
+    min-width: 55px;
+    text-align: center;
+    padding: 7px;
+}
+.filter-categories:hover {
+    color: rgb(92, 88, 88);
+    background-color: silver;
+    cursor: pointer;
+}

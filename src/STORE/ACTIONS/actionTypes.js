@@ -1,0 +1,1 @@
+export const SET_ACTIVESTATE = 'SET_ACTIVESTATE';

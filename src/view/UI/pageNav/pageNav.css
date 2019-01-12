@@ -1,0 +1,31 @@
+.previous-btn, .next-btn {
+    color: whitesmoke;
+    display: inline-block;
+    background-color: rgb(173, 168, 168);
+    border-radius: 15px;
+    margin: auto 8px 0 0;
+    min-width: 55px;
+    text-align: center;
+    padding: 7px;
+}
+.previous-btn:hover, .next-btn:hover {
+    color: rgb(92, 88, 88);
+    background-color: silver;
+    cursor: pointer;
+}
+.current-page {
+    padding: 8px;
+    background-color: whitesmoke;
+    margin-left: 20px;
+    border-radius: 100px;
+    color: blue;
+}
+.dots {
+    padding: 8px;
+    color: gray;
+}
+.last-page {
+    padding: 8px;
+    color: gray;
+    margin-right: 10px;
+}

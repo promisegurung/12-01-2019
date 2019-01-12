@@ -1,0 +1,82 @@
+.categories-view {
+  border-radius: 5px;
+  position: relative;
+  margin: auto;
+  top: 50px;
+  max-width: 1000px;
+  width: 80%;
+  height: 600px;
+}
+.default-categories {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 32% 2% 32% 2% 32%;
+  grid-template-rows: 42% 5% 42% 5% 6%;
+  grid-template-areas:
+    "cat-1 . cat-2 . cat-3"
+    ". . . . ."
+    "cat-4 . cat-5 . cat-6"
+    ". . . . ."
+    ". . see-more . .";
+}
+.see-more-categories {
+  width: 55%;
+  justify-self: center;
+  grid-area: see-more;
+  text-align: center;
+  border-bottom: 2px solid rgba(226, 122, 24, 0.8);
+}
+#cat-1 {
+  grid-area: cat-1;
+}
+#cat-2 {
+  grid-area: cat-2;
+}
+#cat-3 {
+  grid-area: cat-3;
+}
+#cat-4 {
+  grid-area: cat-4;
+}
+#cat-5 {
+  grid-area: cat-5;
+}
+#cat-6 {
+  grid-area: cat-6;
+}
+
+.categories {
+  display: grid;
+  grid-template-rows: 60% 1% 39%;
+  grid-template-areas:
+    "img"
+    "."
+    "desc";
+}
+.categories:hover {
+  cursor: pointer;
+}
+#cat-img {
+  width: 100%;
+  height: 100%;
+  grid-area: img;
+  border: 1px solid silver;
+}
+.cat-desc {
+  grid-area: desc;
+  display: grid;
+  grid-template-rows: 23% 77%;
+  grid-template-areas:
+    "cat-title"
+    "cat-details";
+}
+#cat-title {
+  font-size: 18px;
+  grid-area: cat-title;
+}
+#cat-desc {
+  grid-area: cat-details;
+  padding-top: 6px;
+  font-size: 11px;
+}

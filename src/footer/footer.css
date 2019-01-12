@@ -1,0 +1,78 @@
+.footer {
+  background-color: black;
+  margin-top: 190px;
+  height: 180px;
+}
+.footer-menu {
+  width: 80%;
+  max-width: 1000px;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 10% 75% 15%;
+  grid-template-areas:
+    ". . . ."
+    "use-town contact-us . . "
+    " copyright menu menu country ";
+}
+
+.use-town {
+    width: 80%;
+    height: 80%;
+    grid-area: use-town;
+    display: grid;
+    grid-template-rows: 28% 18% 18% 18% 18%;
+    grid-template-areas: 
+    "title"
+    "link1"
+    "link2"
+    "link3"
+    "link4";
+}
+.contact-us {
+    width: 80%;
+    height: 80%;
+    grid-area: contact-us;
+    display: grid;
+    grid-template-rows: 28% 18% 18% 18% 18%;
+    grid-template-areas: 
+    "title"
+    "link1"
+    "link2"
+    "link3"
+    "link4";
+}
+#title {
+    color: lightgray;
+    font-size: 13px;
+    font-weight: 600;
+    margin: auto 0;
+}
+.footer-menu a {
+    color: grey;
+    font-size: 11px;
+    text-decoration: none;
+}
+.menu {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    grid-area: menu;
+}
+.menu a {
+    padding-right: 19px;
+}
+.copyright {
+    grid-area: copyright;
+    font-size: 10px;
+    color: grey;
+    margin: auto 0;
+}
+.country {
+    grid-area: country;
+    font-size: 10px;
+    color: grey;
+    justify-self: end;
+    margin: auto 0 auto auto;
+}

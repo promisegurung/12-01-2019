@@ -1,0 +1,100 @@
+.events-view {
+    border-radius: 5px;
+    position: relative;
+    margin: auto;
+    top: 50px;
+    max-width: 1000px;
+    width: 80%;
+    height: 600px;
+  }
+  .default-events {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 32% 2% 32% 2% 32%;
+    grid-template-rows: 42% 5% 42% 5% 6%;
+    grid-template-areas:
+      "event-1 . event-2 . event-3"
+      ". . . . ."
+      "event-4 . event-5 . event-6"
+      ". . . . ."
+      ". . see-more . .";
+  }
+  .see-more-events {
+      width: 45%;
+      justify-self: center;
+      grid-area: see-more;
+      text-align: center;
+      border-bottom: 2px solid rgba(226, 122, 24, 0.8);
+  }
+  .see-more-events:hover {
+    cursor: pointer;
+}
+  #event-1 {
+      grid-area: event-1;
+  }
+  #event-2 {
+      grid-area: event-2;
+  }
+  #event-3 {
+      grid-area: event-3;
+  }
+  #event-4 {
+      grid-area: event-4;
+  }
+  #event-5 {
+      grid-area: event-5;
+  }
+  #event-6 {
+      grid-area: event-6;
+  }
+  
+  .events {
+      display: grid;
+      grid-template-rows: 60% 1% 39%;
+      grid-template-areas: 
+      "img"
+      "."
+      "desc"
+  }
+  .events:hover {
+      cursor: pointer;
+  }
+  #event-img {
+      width: 100%;
+      height: 100%;
+      grid-area: img;
+      border: 1px solid silver;
+  }
+  .event-desc {
+      grid-area: desc;
+      display: grid;
+      grid-template-columns: 10% 4% 86%;
+      grid-template-rows: 23% 77%;
+      grid-template-areas: 
+      "month . event-title"
+      "date . event-details"
+  }
+  #month {
+      padding-top: 5px;
+      font-size: 13px;
+      color: red;
+      text-align: center;
+      text-transform: uppercase;
+      grid-area: month;
+  }
+  #event-date {
+      font-size: 17px;
+      text-align: center;
+      grid-area: date;
+  }
+  #event-title {
+      font-size: 14px;
+      font-weight: 600;
+      grid-area: event-title;
+  }
+  #event-details {
+      grid-area: event-details;
+      font-size: 12px;
+  }
+  

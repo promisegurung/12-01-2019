@@ -1,0 +1,66 @@
+.event-search {
+  color: white;
+  background-color: rgba(17, 14, 14, 0.8);
+  border-radius: 5px;
+  position: absolute;
+  margin-top: -180px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  max-width: 1000px;
+  width: 80%;
+  height: 100px;
+  display: grid;
+  grid-template-columns: 5% 40% 5% 30% 5% 10% 5%;
+  grid-template-rows: 30px 70px;
+  grid-template-areas:
+    ". where . when . btn ."
+    ". location . date . btn .";
+}
+
+#where {
+  align-self: end;
+  grid-area: where;
+}
+#when {
+  align-self: end;
+  grid-area: when;
+}
+#location {
+  grid-area: location;
+  align-self: end;
+  margin: auto;
+}
+#date {
+  grid-area: date;
+  align-self: end;
+  margin: auto;
+}
+#btn {
+  color: white;
+  grid-area: btn;
+  height: 30%;
+  width: 100%;
+  border-style: none;
+  background-color: rgba(226, 122, 24, 0.8);
+  align-self: end;
+  margin: 50px 0 auto 15px;
+  border-radius: 5px;
+}
+#btn:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 17px 0px rgba(252, 252, 252, 1);
+  font-size: 16px;
+}
+input {
+  color: white;
+  border-style: none;
+  background: transparent;
+  outline: none;
+  background: rgba(57, 63, 84, 0.8);
+  width: 100%;
+  height: 50%;
+  padding-left: 10px;
+  border-bottom: 1px solid rgba(226, 122, 24, 0.8);
+}

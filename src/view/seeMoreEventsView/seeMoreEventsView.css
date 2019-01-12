@@ -1,0 +1,29 @@
+.see-more-events-view {
+  border-radius: 5px;
+  position: relative;
+  margin: auto;
+  top: 50px;
+  max-width: 1000px;
+  width: 80%;
+  height: 960px;
+  display: grid;
+  grid-template-rows: 16% 78% 6%;
+  grid-template-areas:
+    "cat"
+    "events-view"
+    "page-nav";
+}
+.events-category {
+  grid-area: cat;
+}
+.events-all-view {
+  grid-area: events-view;
+  background-color: aqua;
+  display: grid;
+  grid-template-columns: 32% 2% 32% 2% 32%;
+  grid-template-rows: 33.33% 33.33% 33.33%;
+}
+.page-nav {
+  grid-area: page-nav;
+  margin: auto 0;
+}

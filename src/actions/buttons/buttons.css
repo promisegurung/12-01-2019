@@ -1,0 +1,88 @@
+.buttons {
+  position: relative;
+  top: -5px;
+  margin: auto;
+  max-width: 800px;
+  width: 60%;
+  height: 150px;
+  grid-area: btn;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 70% 30%;
+  grid-template-areas:
+    "events services categories surprise"
+    "label-events label-services label-categories label-surprise";
+}
+
+#events:hover,
+#services:hover,
+#categories:hover,
+#surprise:hover {
+  background-color: rgb(226, 122, 24);
+  cursor: pointer;
+}
+
+#events.active,
+#services.active,
+#categories.active {
+  background-color: rgb(226, 122, 24);
+  cursor: auto;
+}
+
+img {
+  height: 70%;
+}
+
+#events {
+  background-color: black;
+  height: 80px;
+  width: 80px;
+  border-radius: 160px;
+  margin: auto;
+  grid-area: events;
+  border-style: none;
+}
+#services {
+  background-color: black;
+  height: 80px;
+  width: 80px;
+  border-radius: 160px;
+  margin: auto;
+  grid-area: services;
+  border-style: none;
+}
+#categories {
+  background-color: black;
+  height: 80px;
+  width: 80px;
+  border-radius: 160px;
+  margin: auto;
+  grid-area: categories;
+  border-style: none;
+}
+#surprise {
+  background-color: black;
+  height: 80px;
+  width: 80px;
+  border-radius: 160px;
+  margin: auto;
+  grid-area: surprise;
+  border-style: none;
+}
+
+#label-events {
+  grid-area: label-events;
+  text-align: center;
+}
+#label-services {
+  grid-area: label-services;
+  text-align: center;
+}
+#label-categories {
+  grid-area: label-categories;
+  text-align: center;
+}
+#label-surprise {
+  grid-area: label-surprise;
+  text-align: center;
+}
