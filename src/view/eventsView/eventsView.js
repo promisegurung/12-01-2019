@@ -13,6 +13,7 @@ import Event3 from "../../assets/eventsView/event-3.png";
 import Event4 from "../../assets/eventsView/event-4.png";
 import Event5 from "../../assets/eventsView/event-5.png";
 import Event6 from "../../assets/eventsView/event-6.png";
+import RenderEventsView from "../renderView/renderEventsView/renderEventsView";
 
 const sixEvents = [
   {
@@ -94,20 +95,6 @@ const sixEvents = [
     refundPolicy: "No refunds"
   }
 ];
-const months = [
-  "Jan",
-  "Feb",
-  "Mar",
-  "Apr",
-  "May",
-  "Jun",
-  "Jul",
-  "Aug",
-  "Sep",
-  "Oct",
-  "Nov",
-  "Dec"
-];
 
 class View extends Component {
   state = {
@@ -136,35 +123,17 @@ class View extends Component {
         </Modal>
         <div className="events-view fade">
           <div className="default-events">
-            {sixEvents.map(event => {
-              return (
-                <div
-                  className="events"
-                  id={event.id}
-                  onClick={() => this.onClickHandler(event)}
-                >
-                  <img id="event-img" src={event.src} />
-                  <div className="event-desc">
-                    <div id="month">
-                      {months[parseInt(event.date.date.split("/")[1]) - 1]}
-                    </div>
-                    <div id="event-date">{event.date.date.split("/")[0]}</div>
-                    <div id="event-title">{event.title}</div>
-                    <div id="event-details">
-                      {`${event.date.day}, ${event.date.date.split("/")[0]} ${
-                        months[parseInt(event.date.date.split("/")[1]) - 1]
-                      }, ${event.date.date.split("/")[2]}`}
-                      <br />
-                      {event.date.time}
-                      <br />
-                      {event.location}
-                      <br />
-                      {`£${event.price}`}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            <RenderEventsView
+              class={"events"}
+              events={sixEvents}
+              onClickHandler={this.onClickHandler}
+              imgID={"event-img"}
+              descID={"event-desc"}
+              monthID={"month"}
+              eventDateID={"event-date"}
+              eventTitleID={"event-title"}
+              eventDetailsID={"event-details"}
+            />
             <div
               className="see-more-events"
               onClick={() => this.props.onClickSeeMoreEvents("see-more-events")}

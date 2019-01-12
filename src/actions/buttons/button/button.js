@@ -13,21 +13,21 @@ class Button extends Component {
     return (
       <>
         <button
-          className={this.props.activeState === "events" ? "active" : null}
+          className={this.props.activeState === "events" || this.props.activeState === "see-more-events"? "active" : null}
           id="events"
           onClick={() => this.props.onSetActiveState("events")}
         >
           <img src={Events} alt="events" />
         </button>
         <button
-          className={this.props.activeState === "services" ? "active" : null}
+          className={this.props.activeState === "services" || this.props.activeState === "see-more-services" ? "active" : null}
           id="services"
           onClick={() => this.props.onSetActiveState("services")}
         >
           <img src={Services} alt="services" />
         </button>
         <button
-          className={this.props.activeState === "categories" ? "active" : null}
+          className={this.props.activeState === "categories" || this.props.activeState === "see-more-categories"  ? "active" : null}
           id="categories"
           onClick={() => this.props.onSetActiveState("categories")}
         >

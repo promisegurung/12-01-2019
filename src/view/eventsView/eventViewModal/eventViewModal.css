@@ -90,6 +90,7 @@
   }
   #event-specific-title {
     font-size: 17px;
+    margin-top: -8px;
     font-weight: 600;
   }
   #event-specific-organiser {

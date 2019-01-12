@@ -30,22 +30,22 @@
   .see-more-events:hover {
     cursor: pointer;
 }
-  #event-1 {
+  #events-0 {
       grid-area: event-1;
   }
-  #event-2 {
+  #events-1 {
       grid-area: event-2;
   }
-  #event-3 {
+  #events-2 {
       grid-area: event-3;
   }
-  #event-4 {
+  #events-3 {
       grid-area: event-4;
   }
-  #event-5 {
+  #events-4 {
       grid-area: event-5;
   }
-  #event-6 {
+  #events-5 {
       grid-area: event-6;
   }
   
@@ -90,11 +90,12 @@
   }
   #event-title {
       font-size: 14px;
+      margin-top: 4px;
       font-weight: 600;
       grid-area: event-title;
   }
   #event-details {
       grid-area: event-details;
-      font-size: 12px;
+      font-size: 14px;
   }
   
