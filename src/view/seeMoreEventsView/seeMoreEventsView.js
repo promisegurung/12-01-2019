@@ -30,7 +30,7 @@ const eventsCategory = [
   "Conference",
   "Festivals"
 ];
-const eightEvents = [
+const nineEvents = [
   {
     id: "event-1",
     title: "Halloween Special: 90's EDITION",
@@ -155,8 +155,8 @@ class SeeMoreEventsView extends Component {
     showModal: false,
     selectedEvent: {}
   };
-  onClickHandler = eventTitle => {
-    this.setState({ showModal: true, selectedEvent: eventTitle });
+  onClickHandler = event => {
+    this.setState({ showModal: true, selectedEvent: event });
   };
   modalClosedHandler = () => {
     this.setState({ showModal: false });
@@ -180,7 +180,7 @@ class SeeMoreEventsView extends Component {
           <div className="events-all-view">
             <RenderEventsView
               class={"event-all-view"}
-              events={eightEvents}
+              events={nineEvents}
               onClickHandler={this.onClickHandler}
               imgID={"event-all-img"}
               descID={"event-all-desc"}

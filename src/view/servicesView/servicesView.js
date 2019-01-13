@@ -5,6 +5,7 @@ import * as actions from "../../STORE/ACTIONS/button";
 
 import Modal from "../UI/modal/modal";
 import ServiceViewModal from "./serviceViewModal/serviceViewModal";
+import RenderServicesView from "../renderView/renderServicesView/renderServicesView";
 
 import Service1 from "../../assets/servicesView/service-1.jpeg";
 import Service2 from "../../assets/servicesView/service-2.jpeg";
@@ -125,25 +126,15 @@ class View extends Component {
         </Modal>
         <div className="services-view fade">
           <div className="default-services">
-            {sixServices.map(service => {
-              return (
-                <div
-                  className="services"
-                  id={service.id}
-                  onClick={() => this.onClickHandler(service)}
-                >
-                  <img id="service-img" src={service.src} />
-                  <div className="service-desc">
-                    <div id="service-title">{service.title}</div>
-                    <div id="service-desc">
-                      {service.desc.split("*")[0]} <br />
-                      {service.desc.split("*")[1]} <br />
-                      {service.desc.split("*")[2]}
-                    </div>
-                  </div>
-                </div>
-              );
-            })}
+            <RenderServicesView
+              services={sixServices}
+              class={"service"}
+              onClickHandler={this.onClickHandler}
+              imgID={"service-img"}
+              descID={"service-desc"}
+              serviceTitleID={"service-title"}
+              serviceDescID={"service-desc"}
+            />
             <div
               className="see-more-services"
               onClick={() =>

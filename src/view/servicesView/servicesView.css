@@ -30,26 +30,26 @@
   .see-more-services:hover {
     cursor: pointer;
 }
-  #service-1 {
+  #service-0 {
       grid-area: service-1;
   }
-  #service-2 {
+  #service-1 {
       grid-area: service-2;
   }
-  #service-3 {
+  #service-2 {
       grid-area: service-3;
   }
-  #service-4 {
+  #service-3 {
       grid-area: service-4;
   }
-  #service-5 {
+  #service-4 {
       grid-area: service-5;
   }
-  #service-6 {
+  #service-5 {
       grid-area: service-6;
   }
   
-  .services {
+  .service {
       display: grid;
       grid-template-rows: 60% 1% 39%;
       grid-template-areas: 
@@ -57,7 +57,7 @@
       "."
       "desc"
   }
- .services:hover {
+ .service:hover {
     cursor: pointer;
 }
   #service-img {
