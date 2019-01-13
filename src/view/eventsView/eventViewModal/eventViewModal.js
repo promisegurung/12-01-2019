@@ -1,21 +1,7 @@
 import React from "react";
+import { months } from "../../../eventsMockData";
 
-import './eventViewModal.css'
-
-const months = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec"
-  ];
+import "./eventViewModal.css";
 
 const EventViewModal = props => {
   return (
