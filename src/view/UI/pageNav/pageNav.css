@@ -1,33 +1,52 @@
-.previous-btn, .next-btn {
-    color: whitesmoke;
-    display: inline-block;
-    background-color: rgb(170, 170, 170);
-    border-radius: 15px;
-    margin: auto 8px 0 0;
-    min-width: 55px;
-    text-align: center;
-    padding: 4px;
-    font-size: 12px;
+.previous-btn,
+.next-btn {
+  color: whitesmoke;
+  border: none;
+  display: inline-block;
+  background-color: rgb(170, 170, 170);
+  border-radius: 15px;
+  margin: auto 8px 0 0;
+  min-width: 55px;
+  text-align: center;
+  padding: 4px;
+  font-size: 12px;
 }
-.previous-btn:hover, .next-btn:hover {
-    color: rgb(92, 88, 88);
-    background-color: silver;
-    cursor: pointer;
+.disabled {
+  color: aliceblue;
+  border: none;
+  display: inline-block;
+  background-color: rgb(170, 170, 170);
+  border-radius: 15px;
+  margin: auto 8px 0 0;
+  min-width: 55px;
+  text-align: center;
+  padding: 4px;
+  font-size: 12px;
+  cursor: not-allowed;
+}
+.previous-btn:hover,
+.next-btn:hover {
+  color: rgb(92, 88, 88);
+  background-color: silver;
+  cursor: pointer;
 }
 .current-page {
-    padding: 8px;
-    background-color: whitesmoke;
-    margin-left: 20px;
-    border-radius: 100px;
-    color: blue;
-    font-size: 11px;
+  padding: 8px;
+  background-color: whitesmoke;
+  margin-left: 20px;
+  border-radius: 100px;
+  color: blue;
+  font-size: 11px;
 }
 .dots {
-    padding: 8px;
-    color: gray;
+  padding: 8px;
+  color: gray;
 }
 .last-page {
-    padding: 8px;
-    color: gray;
-    margin-right: 10px;
+  padding: 8px;
+  color: gray;
+  margin-right: 10px;
 }
+.end {
+    color: red;
+  }

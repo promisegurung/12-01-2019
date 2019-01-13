@@ -8,20 +8,47 @@ import RenderEventsView from "../renderView/renderEventsView/renderEventsView";
 import Modal from "../UI/modal/modal";
 import EventViewModal from "../eventsView/eventViewModal/eventViewModal";
 
-import { eventsCategory, nineEvents } from "../../eventsMockData";
+import { eventsCategory } from "../../eventsMockData";
+import EVENTSHELPER from "../../HELPERS/EVENTSHELPER/EVENTSHELPER";
 
 class SeeMoreEventsView extends Component {
   state = {
     showModal: false,
-    selectedEvent: {}
+    selectedEvent: {},
+    currentPage: 1,
+    lastPage: null,
+    currentEvents: []
   };
+  componentDidMount() {
+    const [nineEvents, lastPage] = EVENTSHELPER(this.state.currentPage);
+    this.setState({ currentEvents: nineEvents, lastPage: lastPage });
+  }
   onClickHandler = event => {
     this.setState({ showModal: true, selectedEvent: event });
   };
   modalClosedHandler = () => {
     this.setState({ showModal: false });
   };
+  onNextBtnClickedHandler = () => {
+    if (this.state.currentPage < this.state.lastPage) {
+      const [nineEvents, _] = EVENTSHELPER(this.state.currentPage + 1);
+      this.setState({
+        currentPage: this.state.currentPage + 1,
+        currentEvents: nineEvents
+      });
+    }
+  };
+  onPreviousBtnClickedHandler = () => {
+    if (this.state.currentPage > 1) {
+      const [nineEvents, _] = EVENTSHELPER(this.state.currentPage - 1);
+      this.setState({
+        currentPage: this.state.currentPage - 1,
+        currentEvents: nineEvents
+      });
+    }
+  };
   render() {
+    console.log(this.state.currentPage);
     return (
       <>
         <Modal
@@ -37,10 +64,10 @@ class SeeMoreEventsView extends Component {
         </Modal>
         <div className="see-more-events-view fade">
           <Filters class={"events-category"} cats={eventsCategory} />
-          <div className="events-all-view">
+          <div className="events-all-view fade">
             <RenderEventsView
               class={"event-all-view"}
-              events={nineEvents}
+              events={this.state.currentEvents}
               onClickHandler={this.onClickHandler}
               imgID={"event-all-img"}
               descID={"event-all-desc"}
@@ -50,7 +77,13 @@ class SeeMoreEventsView extends Component {
               eventDetailsID={"event-all-details"}
             />
           </div>
-          <PageNav class={"page-nav"} currentPage={1} lastPage={49} />
+          <PageNav
+            class={"page-nav"}
+            currentPage={this.state.currentPage}
+            lastPage={this.state.lastPage}
+            onNextBtnClickedHandler={this.onNextBtnClickedHandler}
+            onPreviousBtnClickedHandler={this.onPreviousBtnClickedHandler}
+          />
         </div>
       </>
     );
