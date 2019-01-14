@@ -6,9 +6,19 @@ import Event3 from "./assets/eventsView/event-3.png";
 import Event4 from "./assets/eventsView/event-4.png";
 import Event5 from "./assets/eventsView/event-5.png";
 import Event6 from "./assets/eventsView/event-6.png";
-import Event7 from "./assets/eventsView/event-3.png";
-import Event8 from "./assets/eventsView/event-4.png";
-import Event9 from "./assets/eventsView/event-2.png";
+import Event7 from "./assets/eventsView/event-7.jpeg";
+import Event8 from "./assets/eventsView/event-8.jpeg";
+import Event9 from "./assets/eventsView/event-9.jpg";
+import Event10 from "./assets/eventsView/event-10.jpeg";
+import Event11 from "./assets/eventsView/event-11.jpeg";
+import Event12 from "./assets/eventsView/event-12.jpeg";
+import Event13 from "./assets/eventsView/event-13.jpeg";
+import Event14 from "./assets/eventsView/event-14.jpeg";
+import Event15 from "./assets/eventsView/event-15.jpeg";
+import Event16 from "./assets/eventsView/event-16.jpeg";
+import Event17 from "./assets/eventsView/event-17.jpeg";
+import Event18 from "./assets/eventsView/event-18.jpeg";
+import Event19 from "./assets/eventsView/event-19.jpeg";
 
 // Events Categories
 
@@ -216,68 +226,166 @@ export const allEvents = [
   },
   {
     id: "event-7",
-    title: "Lovely Mirage: Space Jazz",
+    title: "Learn to Trade",
     description:
       "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
     src: Event7,
-    date: { date: "27/05/2019", day: "Sat", time: "19:00" },
-    location: "Vauxhall, London",
-    price: "FREE",
+    date: { date: "27/05/2019", day: "Sat", time: "07:00" },
+    location: "Brixton, London",
+    price: "78.00",
     organiser: "The Lorem Ipsum",
-    fullPrice: "FREE",
-    refundPolicy: "No refunds",
-    categories: ["Free"]
-  },
-  {
-    id: "event-8",
-    title: "Build your Empire: Beast Mode",
-    description:
-      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event8,
-    date: { date: "5/09/2019", day: "Sun", time: "18:00" },
-    location: "Waterloo, London",
-    price: "29.00",
-    organiser: "The Lorem Ipsum",
-    fullPrice: "£29.00 - £45.00",
+    fullPrice: "78.00",
     refundPolicy: "No refunds",
     categories: ["Conference"]
   },
   {
+    id: "event-8",
+    title: "Bake and Eat: Learn to Bake",
+    description:
+      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
+    src: Event8,
+    date: { date: "5/09/2019", day: "Sun", time: "15:00" },
+    location: "Waterloo, London",
+    price: "18.00",
+    organiser: "The Lorem Ipsum",
+    fullPrice: "£18.00 - £45.00",
+    refundPolicy: "No refunds",
+    categories: ["Social Events"]
+  },
+  {
     id: "event-9",
-    title: "Play and Bleed: ActionCut",
+    title: "London Tour: whole Day",
     description:
       "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
     src: Event9,
-    date: { date: "5/09/2019", day: "Sun", time: "18:00" },
+    date: { date: "18/05/2019", day: "Sun", time: "08:00" },
     location: "Waterloo, London",
     price: "29.00",
     organiser: "The Lorem Ipsum",
-    fullPrice: "£29.00 - £45.00",
+    fullPrice: "£29.00",
     refundPolicy: "No refunds",
-    categories: ["Parties"]
+    categories: ["Outdoor"]
   },
   {
     id: "event-10",
-    title: "The calling of Brogues",
+    title: "The Fashion week",
     description:
       "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event1,
-    date: { date: "15/09/2019", day: "Sun", time: "18:00" },
+    src: Event10,
+    date: { date: "11/11/2019", day: "Sun", time: "17:00" },
     location: "SOHO, London",
     price: "100.00",
     organiser: "The Lorem Ipsum",
     fullPrice: "£100.00 - £450.00",
     refundPolicy: "No refunds",
-    categories: ["Movies"]
+    categories: ["Social Events"]
   },
   {
     id: "event-11",
-    title: "NEW YEAR 2098 PARTY",
+    title: "Fitness with Alica: Women's only",
     description:
       "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event2,
+    src: Event11,
     date: { date: "55/09/2019", day: "Sun", time: "18:00" },
     location: "Waterloo, France",
+    price: "9.00",
+    organiser: "The Lorem Ipsum",
+    fullPrice: "9.00",
+    refundPolicy: "No refunds",
+    categories: ["Social Events"]
+  },
+  {
+    id: "event-12",
+    title: "Healthy Lifestyle: Dr Fooot",
+    description:
+      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
+    src: Event12,
+    date: { date: "5/09/2019", day: "Sun", time: "18:00" },
+    location: "SOHO, London",
+    price: "32.00",
+    organiser: "The Lorem Ipsum",
+    fullPrice: "£32.00",
+    refundPolicy: "No refunds",
+    categories: ["Conference", "Outdoor"]
+  },
+  {
+    id: "event-13",
+    title: "Mr UK Bodybuilding Competition",
+    description:
+      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
+    src: Event13,
+    date: { date: "23/08/2019", day: "Sun", time: "18:00" },
+    location: "Harrow, London",
+    price: "60.00",
+    organiser: "The Lorem Ipsum",
+    fullPrice: "£60.00",
+    refundPolicy: "No refunds",
+    categories: ["Social Events"]
+  },
+  {
+    id: "event-14",
+    title: "Crystal Show: See your future",
+    description:
+      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
+    src: Event14,
+    date: { date: "5/10/2019", day: "Mon", time: "18:00" },
+    location: "Pilot, London",
+    price: "40.00",
+    organiser: "The Lorem Ipsum",
+    fullPrice: "£40.00",
+    refundPolicy: "No refunds",
+    categories: ["Social Events", "Conference"]
+  },
+  {
+    id: "event-15",
+    title: "UK Buddhist Society",
+    description:
+      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
+    src: Event15,
+    date: { date: "09/12/2019", day: "Sat", time: "11:00" },
+    location: "Waterloo, London",
+    price: "FREE",
+    organiser: "The Lorem Ipsum",
+    fullPrice: "FREE",
+    refundPolicy: "No refunds",
+    categories: ["Free", "Social Events"]
+  },
+  {
+    id: "event-16",
+    title: "LGBT Nepal/UK",
+    description:
+      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
+    src: Event16,
+    date: { date: "27/05/2019", day: "Sat", time: "19:00" },
+    location: "Camberley",
+    price: "FREE",
+    organiser: "The Lorem Ipsum",
+    fullPrice: "FREE",
+    refundPolicy: "No refunds",
+    categories: ["Conference", "Social Events"]
+  },
+  {
+    id: "event-17",
+    title: "Find your Soul Mate",
+    description:
+      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
+    src: Event17,
+    date: { date: "5/09/2019", day: "Sun", time: "18:00" },
+    location: "Farnborough",
+    price: "29.00",
+    organiser: "The Lorem Ipsum",
+    fullPrice: "£150.00 - £250.00",
+    refundPolicy: "No refunds",
+    categories: ["Parties", "Social Events", "Conference"]
+  },
+  {
+    id: "event-18",
+    title: "Start-up Week: zero to hero",
+    description:
+      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
+    src: Event18,
+    date: { date: "27/05/2019", day: "Sat", time: "09:00" },
+    location: "Vauxhall, London",
     price: "FREE",
     organiser: "The Lorem Ipsum",
     fullPrice: "FREE",
@@ -285,115 +393,17 @@ export const allEvents = [
     categories: ["Conference", "Free"]
   },
   {
-    id: "event-12",
-    title: "Summer Something Fest",
+    id: "event-19",
+    title: "Law, Order and Business",
     description:
       "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event9,
-    date: { date: "5/09/2019", day: "Sun", time: "18:00" },
-    location: "SOHO, London",
-    price: "209.00",
-    organiser: "The Lorem Ipsum",
-    fullPrice: "£209.00 - £745.00",
-    refundPolicy: "No refunds",
-    categories: ["Outdoor"]
-  },
-  {
-    id: "event-13",
-    title: "NEW YacthY",
-    description:
-      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event9,
-    date: { date: "5/09/2019", day: "Sun", time: "18:00" },
-    location: "Waterloo, London",
-    price: "900.00",
-    organiser: "The Lorem Ipsum",
-    fullPrice: "£900.00 - £4950.00",
-    refundPolicy: "No refunds",
-    categories: ["Social Events"]
-  },
-  {
-    id: "event-14",
-    title: "Cello mello",
-    description:
-      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event9,
-    date: { date: "5/10/2019", day: "Mon", time: "18:00" },
-    location: "Pilot, London",
-    price: "300.00",
-    organiser: "The Lorem Ipsum",
-    fullPrice: "£300.00 - £450.00",
-    refundPolicy: "No refunds",
-    categories: ["Live Music", "Concerts"]
-  },
-  {
-    id: "event-15",
-    title: "The 15th PooooRTY",
-    description:
-      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event9,
-    date: { date: "15/09/2019", day: "Sun", time: "15:00" },
-    location: "Waterloo, London",
-    price: "150.00",
-    organiser: "The Lorem Ipsum",
-    fullPrice: "£150.00 - £415.00",
-    refundPolicy: "No refunds",
-    categories: ["Parties"]
-  },
-  {
-    id: "event-16",
-    title: "LuckyChucky make a bucky",
-    description:
-      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event5,
-    date: { date: "27/05/2019", day: "Sat", time: "19:00" },
-    location: "Aldershot",
-    price: "20.00",
-    organiser: "The Lorem Ipsum",
-    fullPrice: "£20.00 - £30.00",
-    refundPolicy: "No refunds",
-    categories: ["Conference"]
-  },
-  {
-    id: "event-17",
-    title: "OLD YEAR 2016 PARTY",
-    description:
-      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event6,
-    date: { date: "5/09/2019", day: "Sun", time: "18:00" },
-    location: "Farnborough",
+    src: Event19,
+    date: { date: "22/03/2019", day: "Sat", time: "12:00" },
+    location: "Wembley, London",
     price: "29.00",
     organiser: "The Lorem Ipsum",
-    fullPrice: "£29.00 - £45.00",
+    fullPrice: "£29.00",
     refundPolicy: "No refunds",
-    categories: ["Parties"]
-  },
-  {
-    id: "event-18",
-    title: "Monkey Space Jazz",
-    description:
-      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event7,
-    date: { date: "27/05/2019", day: "Sat", time: "19:00" },
-    location: "Vauxhall, London",
-    price: "20.00",
-    organiser: "The Lorem Ipsum",
-    fullPrice: "£20.00 - £30.00",
-    refundPolicy: "No refunds",
-    categories: ["Live Music"]
-  },
-  {
-    id: "event-19",
-    title: "Me ALONE",
-    description:
-      "Lorem ipsum dolor sit amet, dicit deterruisset in est, no atqui viderer deterruisset sea. Albucius accusata no vim, ne per epicuri interpretaris, id placerat conceptam eam. Nam id stet atqui, vel an duis tollit convenire. Quo ut denique recteque. No iudico animal constituto vim, ius te verear accusamus. Per cu causae apeirian. Pri ei ubique electram, ei est vidit porro mundi. Cu eum causae alienum, sed ad dico velit.Tation omittam salutandi eos id, vis odio dicit ex, natum modus lorem cum ei. Ius te blandit fabellas volutpat. Id sea nihil labitur sensibus, tota idque ceteros at nam. Sea verterem moderatius ex, mei at deleniti imperdiet theophrastus. Veritus salutatus no eos, no usu viris offendit.",
-    src: Event7,
-    date: { date: "27/05/2019", day: "Sat", time: "19:00" },
-    location: "Wembley, London",
-    price: "20.00",
-    organiser: "The Lorem Ipsum",
-    fullPrice: "£20.00 - £30.00",
-    refundPolicy: "No refunds",
-    categories: ["Movies"]
+    categories: ["Conference"]
   }
 ];

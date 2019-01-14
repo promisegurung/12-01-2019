@@ -2,7 +2,7 @@ import React from "react";
 
 import "./filters.css";
 
-const Filters = props => {
+const Filters = (props ) => {
   return (
     <div className={props.class}>
       {props.cats.map(cat => {

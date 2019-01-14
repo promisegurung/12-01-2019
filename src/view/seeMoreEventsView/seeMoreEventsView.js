@@ -99,7 +99,6 @@ class SeeMoreEventsView extends Component {
     }
   };
   render() {
-    console.log(this.state.currentPage);
     return (
       <>
         <Modal

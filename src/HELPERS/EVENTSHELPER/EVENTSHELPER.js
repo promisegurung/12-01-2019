@@ -16,20 +16,26 @@ function nineEvents(pageNo, array) {
   let finalArray = [];
   const x = pageNo - 1;
   finalArray = array.slice(x * 9, pageNo * 9);
-  return [finalArray, Math.ceil(allEvents.length / 9)];
+  return [finalArray, Math.ceil(array.length / 9)];
 }
 
 function initializeFilter(pageNo, filters, array) {
-  const finalArray = [];
+  const dublicatedArray = [];
   const x = pageNo - 1;
   filters.forEach(filter =>
     array.forEach(el => {
       el.categories.forEach(cat => {
         if (filter === cat) {
-          finalArray.push(el);
+          dublicatedArray.push(el);
         }
       });
     })
+  );
+  const finalArray = Object.values(
+    dublicatedArray.reduce(
+      (acc, cur) => Object.assign(acc, { [cur.id]: cur }),
+      {}
+    )
   );
   return [
     finalArray.slice(x * 9, pageNo * 9),

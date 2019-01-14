@@ -17,12 +17,24 @@ class SeeMoreServicesView extends Component {
     selectedService: {},
     currentPage: 1,
     lastPage: null,
-    currentServices: []
+    currentServices: [],
+    filter: ["All"]
   };
   componentDidMount() {
-    const [nineServices, lastPage] = SERVICESHELPER(this.state.currentPage);
+    this.callEVENTSHELPER();
+  }
+  callEVENTSHELPER() {
+    const [nineServices, lastPage] = SERVICESHELPER(
+      this.state.currentPage,
+      this.state.filter
+    );
     this.setState({ currentServices: nineServices, lastPage: lastPage });
   }
+  setCurrentServices = (updatedFilter = this.state.filter) => {
+    const [nineServices, lastPage] = SERVICESHELPER(1, updatedFilter);
+    this.setState({ currentServices: nineServices, lastPage: lastPage });
+    this.setState({ currentPage: 1 });
+  };
   onClickHandler = service => {
     this.setState({ showModal: true, selectedService: service });
   };
@@ -31,20 +43,59 @@ class SeeMoreServicesView extends Component {
   };
   onNextBtnClickedHandler = () => {
     if (this.state.currentPage < this.state.lastPage) {
-      const [nineServices, _] = SERVICESHELPER(this.state.currentPage + 1);
+      const [nineServices, lastPage] = SERVICESHELPER(
+        this.state.currentPage + 1,
+        this.state.filter
+      );
       this.setState({
+        currentServices: nineServices,
         currentPage: this.state.currentPage + 1,
-        currentServices: nineServices
+        lastPage: lastPage
       });
     }
   };
   onPreviousBtnClickedHandler = () => {
     if (this.state.currentPage > 1) {
-      const [nineServices, _] = SERVICESHELPER(this.state.currentPage - 1);
+      const [nineServices, lastPage] = SERVICESHELPER(
+        this.state.currentPage - 1,
+        this.state.filter
+      );
       this.setState({
+        currentServices: nineServices,
         currentPage: this.state.currentPage - 1,
-        currentServices: nineServices
+        lastPage: lastPage
       });
+    }
+  };
+  onFilterClickedHandler = cat => {
+    switch (true) {
+      case cat === "All":
+        this.setState({ filter: ["All"] });
+        this.setCurrentServices(["All"]);
+        break;
+      case this.state.filter.includes(cat):
+        const oldFilterState = [...this.state.filter];
+        const newFilterState = oldFilterState.filter(item => item !== cat);
+        if (newFilterState.length === 0) {
+          newFilterState.push("All");
+        }
+        this.setState({ filter: newFilterState });
+
+        this.setCurrentServices(newFilterState);
+        break;
+      case !this.state.filter.includes(cat):
+        const newFilterState1 = [...this.state.filter].filter(
+          item => item !== "All"
+        );
+        newFilterState1.push(cat);
+        this.setState({ filter: newFilterState1 });
+        this.setCurrentServices(newFilterState1);
+        break;
+      default:
+        const newFilterState2 = [...this.state.filter];
+        this.setState({ filter: newFilterState2 });
+        this.setCurrentServices(newFilterState2);
+        break;
     }
   };
   render() {
@@ -62,11 +113,16 @@ class SeeMoreServicesView extends Component {
           ) : null}
         </Modal>
         <div className="see-more-services-view fade">
-          <Filters class={"services-category"} cats={servicesCategory} />
+          <Filters
+            class={"services-category"}
+            cats={servicesCategory}
+            filterBy={this.state.filter}
+            onFilterClickedHandler={this.onFilterClickedHandler}
+          />
           <div className="services-all-view">
             <RenderServicesView
-              services={this.state.currentServices}
               class={"service-all"}
+              services={this.state.currentServices}
               onClickHandler={this.onClickHandler}
               imgID={"service-all-img"}
               descID={"service-all-desc"}
