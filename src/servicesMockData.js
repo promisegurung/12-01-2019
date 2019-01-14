@@ -110,9 +110,9 @@ export const sixServices = [
   }
 ];
 
-// Nine Services****************************************************************************************************
+// All Services****************************************************************************************************
 
-export const nineServices = [
+export const allServices = [
   {
     id: "service-1",
     title: "Professional Health check-up",
@@ -229,6 +229,34 @@ export const nineServices = [
     title: "IT services and Repairs",
     desc:
       "Computer Repairs and Maintanence. * Also provide web and mobile app development. * Call us today for more information.",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+    src: Service9,
+    location: "Lorem Ipsum, London",
+    host: "The Lorem Ipsum",
+    contact: ["07829388901", "02082204901"],
+    availability: "Mon - Fri 05:00 to 21:00"
+  },
+  {
+    id: "service-10",
+    title: "Cab services: Hillingdon",
+    desc:
+      "4-seater to 8-seater. * Pick and drop, one-way or two-way. * Call us today for more information.",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+
+    src: Service9,
+    location: "Lorem Ipsum, Hillingdon",
+    host: "The Lorem Ipsum",
+    contact: ["07829388901", "02082204901"],
+    availability: "Mon - Fri 05:00 to 21:00"
+  },
+  {
+    id: "service-11",
+    title: "Wedding Organiser",
+    desc:
+      "Wedding planning and organising. * Your dream wedding made reality. * Call us today for more information.",
     fullDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
 

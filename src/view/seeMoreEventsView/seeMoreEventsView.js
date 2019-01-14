@@ -17,7 +17,8 @@ class SeeMoreEventsView extends Component {
     selectedEvent: {},
     currentPage: 1,
     lastPage: null,
-    currentEvents: []
+    currentEvents: [],
+    filter: ["All"]
   };
   componentDidMount() {
     const [nineEvents, lastPage] = EVENTSHELPER(this.state.currentPage);
@@ -47,6 +48,33 @@ class SeeMoreEventsView extends Component {
       });
     }
   };
+  onFilterClickedHandler = cat => {
+    switch (true) {
+      case cat === "All":
+        this.setState({ filter: ["All"] });
+        break;
+      case this.state.filter.includes(cat):
+        const oldFilterState = [...this.state.filter];
+        const newFilterState = oldFilterState.filter(item => item !== cat);
+        if (newFilterState.length === 0) {
+          this.setState({ filter: ["All"] });
+        } else {
+          this.setState({ filter: newFilterState });
+        }
+        break;
+      case !this.state.filter.includes(cat):
+        const newFilterState1 = [...this.state.filter].filter(
+          item => item !== "All"
+        );
+        newFilterState1.push(cat);
+        this.setState({ filter: newFilterState1 });
+        break;
+      default:
+        const newFilterState2 = [...this.state.filter];
+        this.setState({ filter: newFilterState2 });
+        break;
+    }
+  };
   render() {
     console.log(this.state.currentPage);
     return (
@@ -63,7 +91,12 @@ class SeeMoreEventsView extends Component {
           ) : null}
         </Modal>
         <div className="see-more-events-view fade">
-          <Filters class={"events-category"} cats={eventsCategory} />
+          <Filters
+            class={"events-category"}
+            cats={eventsCategory}
+            filterBy={this.state.filter}
+            onFilterClickedHandler={this.onFilterClickedHandler}
+          />
           <div className="events-all-view fade">
             <RenderEventsView
               class={"event-all-view"}

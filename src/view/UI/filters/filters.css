@@ -10,6 +10,18 @@
     padding: 5px ;
     font-size: 11px;
 }
+.active-filter {
+    background-color: grey;
+    color: whitesmoke;
+    display: inline-block;
+    border-radius: 15px;
+    margin: auto 8px;
+    margin-bottom: 5px;
+    min-width: 55px;
+    text-align: center;
+    padding: 5px ;
+    font-size: 11px;
+}
 .filter-categories:hover {
     color: rgb(92, 88, 88);
     background-color: silver;
