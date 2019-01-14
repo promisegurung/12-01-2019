@@ -21,9 +21,20 @@ class SeeMoreEventsView extends Component {
     filter: ["All"]
   };
   componentDidMount() {
-    const [nineEvents, lastPage] = EVENTSHELPER(this.state.currentPage);
+    this.callEVENTSHELPER();
+  }
+  callEVENTSHELPER() {
+    const [nineEvents, lastPage] = EVENTSHELPER(
+      this.state.currentPage,
+      this.state.filter
+    );
     this.setState({ currentEvents: nineEvents, lastPage: lastPage });
   }
+  setCurrentEvents = (updatedFilter = this.state.filter) => {
+    const [nineEvents, lastPage] = EVENTSHELPER(1, updatedFilter);
+    this.setState({ currentEvents: nineEvents, lastPage: lastPage });
+    this.setState({ currentPage: 1 });
+  };
   onClickHandler = event => {
     this.setState({ showModal: true, selectedEvent: event });
   };
@@ -32,19 +43,27 @@ class SeeMoreEventsView extends Component {
   };
   onNextBtnClickedHandler = () => {
     if (this.state.currentPage < this.state.lastPage) {
-      const [nineEvents, _] = EVENTSHELPER(this.state.currentPage + 1);
+      const [nineEvents, lastPage] = EVENTSHELPER(
+        this.state.currentPage + 1,
+        this.state.filter
+      );
       this.setState({
+        currentEvents: nineEvents,
         currentPage: this.state.currentPage + 1,
-        currentEvents: nineEvents
+        lastPage: lastPage
       });
     }
   };
   onPreviousBtnClickedHandler = () => {
     if (this.state.currentPage > 1) {
-      const [nineEvents, _] = EVENTSHELPER(this.state.currentPage - 1);
+      const [nineEvents, lastPage] = EVENTSHELPER(
+        this.state.currentPage - 1,
+        this.state.filter
+      );
       this.setState({
+        currentEvents: nineEvents,
         currentPage: this.state.currentPage - 1,
-        currentEvents: nineEvents
+        lastPage: lastPage
       });
     }
   };
@@ -52,15 +71,17 @@ class SeeMoreEventsView extends Component {
     switch (true) {
       case cat === "All":
         this.setState({ filter: ["All"] });
+        this.setCurrentEvents(["All"]);
         break;
       case this.state.filter.includes(cat):
         const oldFilterState = [...this.state.filter];
         const newFilterState = oldFilterState.filter(item => item !== cat);
         if (newFilterState.length === 0) {
-          this.setState({ filter: ["All"] });
-        } else {
-          this.setState({ filter: newFilterState });
+          newFilterState.push("All");
         }
+        this.setState({ filter: newFilterState });
+
+        this.setCurrentEvents(newFilterState);
         break;
       case !this.state.filter.includes(cat):
         const newFilterState1 = [...this.state.filter].filter(
@@ -68,10 +89,12 @@ class SeeMoreEventsView extends Component {
         );
         newFilterState1.push(cat);
         this.setState({ filter: newFilterState1 });
+        this.setCurrentEvents(newFilterState1);
         break;
       default:
         const newFilterState2 = [...this.state.filter];
         this.setState({ filter: newFilterState2 });
+        this.setCurrentEvents(newFilterState2);
         break;
     }
   };

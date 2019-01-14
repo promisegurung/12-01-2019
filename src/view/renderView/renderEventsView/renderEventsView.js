@@ -24,7 +24,7 @@ const RenderEventsView = props => {
           <br />
           {event.location}
           <br />
-          {`£${event.price}`}
+          {event.price === "FREE" ? "FREE" : `£${event.price}`}
         </div>
       </div>
     </div>

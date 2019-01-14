@@ -3,7 +3,6 @@ import React from "react";
 import "./filters.css";
 
 const Filters = props => {
-  console.log(props.filterBy);
   return (
     <div className={props.class}>
       {props.cats.map(cat => {
